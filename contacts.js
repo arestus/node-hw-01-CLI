@@ -4,8 +4,6 @@ const shortid = require("shortid");
 
 const contactsPath = path.join(__dirname, "db", "contacts.json");
 
-console.log(contactsPath);
-
 async function listContacts() {
   try {
     const data = await fs.readFile(contactsPath);
